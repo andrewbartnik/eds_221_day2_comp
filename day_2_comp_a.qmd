@@ -7,6 +7,10 @@ execute:
   message: false
 ---
 
+```{r}
+library(tidyverse)
+```
+
 # Making vectors!
 
 ### A character vector
@@ -109,3 +113,39 @@ tacos$filling[2]
 ```
 
 the second value of dogs is `r tacos$filling[2]`
+
+# Dataframes
+
+```{r}
+
+topping = c("onion", "cilantro", "guacamole")
+
+filling = c("beans", "meat", "veggies")
+
+price = c(6.75, 8.25, 9.5)
+
+df_ex_1 <- data.frame(topping, filling, price)
+
+df_ex_1
+
+class(df_ex_1)
+
+
+
+df_ex_2 <- data.frame(topping = c("sour cream", "salsa", "cheese"), 
+                      filling = c("chicken", "more cheese", "cabbage"),
+                      price = c(12.50, 13.75, 15))
+
+class(df_ex_2)
+
+df_ex_3 <-tribble(
+  ~topping, ~filling, ~price,
+  "avocado", "steak", 13.25,
+  "radish", "fish", 10.40,
+  "salsa", "veggies", 9.75
+)
+
+class(df_ex_3)
+
+df_ex_3$price[3]
+```
