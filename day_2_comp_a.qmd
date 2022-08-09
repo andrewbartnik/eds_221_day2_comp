@@ -19,29 +19,27 @@ class(dogs)
 
 ```{r}
 cats <- c("creamsicle wolf", 14.2, 3L)
+
+class(cats)
 ```
 
 ### A numeric vector
 
 ```{r}
-weights <- c(50, 55, 25, 35)
+years <- c(20, 40, 16, 2)
 
+#Conditional check
+#is. <<< asks questions
+#as. <<< gives command
 
-class(weights)
+is.numeric(years)
+is.character(years)
 ```
 
-### An integer vector
-
 ```{r}
-dog_age <- c(5L, 6L, 1L, 7L)
+dog_food <- c(teddy = "purina", khora = "alpo", waffle = "fancy feast")
 
-class(dog_age)
+dog_food
 
-is.numeric(dog_age)
-```
-
-## What if we combine classes?
-
-```{r}
-
+dog_food[2]
 ```
