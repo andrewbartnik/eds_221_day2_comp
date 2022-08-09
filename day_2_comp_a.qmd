@@ -1,5 +1,5 @@
 ---
-title: "day2_comp_a"
+title: "Day 2 comp session - Data types!!"
 format: html
 editor: visual
 execute: 
@@ -7,30 +7,41 @@ execute:
   message: false
 ---
 
+# Making vectors!
+
+### A character vector
+
 ```{r}
-dogs <- c("teddy", "khora", "waffle", "banjo")
-typeof(dogs)
+dogs <- c("teddy", "khora", "waffle", "banjo", "tallie")
 
 class(dogs)
 ```
 
 ```{r}
+cats <- c("creamsicle wolf", 14.2, 3L)
+```
+
+### A numeric vector
+
+```{r}
 weights <- c(50, 55, 25, 35)
 
-typeof(weights)
 
 class(weights)
 ```
 
+### An integer vector
+
 ```{r}
 dog_age <- c(5L, 6L, 1L, 7L)
-
-typeof(dog_age)
 
 class(dog_age)
 
 is.numeric(dog_age)
 ```
 
+## What if we combine classes?
 
+```{r}
 
+```
